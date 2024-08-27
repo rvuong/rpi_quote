@@ -73,3 +73,9 @@ class EpaperDisplay(Display):
         # Final drawing
         self.epd.display(self.epd.getbuffer(Himage))
         self.epd.sleep()
+
+    def clear(self):
+        logging.info("Clear...")
+        self.epd.Clear()
+        logging.info("Sleep...")
+        self.epd.sleep()

@@ -4,3 +4,6 @@ from app.domain.quote import Quote
 class ConsoleDisplay(Display):
     def show(self, quote: Quote):
         print(f'{quote}')
+
+    def clear(self):
+        print(f'Clear...')
